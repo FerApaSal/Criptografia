@@ -134,6 +134,7 @@ public class Ejer4 {
     }
 
     public static boolean verificarFichero() throws SignatureException {
+        System.out.println("Verificando fichero...");
         File signed = new File("fichero.txt");
         try (Scanner scanner = new Scanner(signed)) {
             String texto = scanner.nextLine();
